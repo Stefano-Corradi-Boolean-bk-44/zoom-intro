@@ -1,0 +1,179 @@
+/* COMMON  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: gray;
+}
+
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between; /* in sost posso mettere margin auto al contenuto da centrare */
+    align-items: center;
+    padding: 0 20px 0 10px;
+    height: 100px;
+    background-color: #FCFCFC;
+}
+
+/* nav left */
+.nav-left{
+    display: flex;
+}
+
+.nav-left .chevron-box, .nav-left input{
+    background-color: #E8E6ED;
+    padding: 7px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: gray;
+}
+
+.nav-left .search{
+    position: relative;
+}
+
+.nav-left .search .fas{
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    color: gray;
+}
+
+.nav-left input{
+    border: 1px solid #E8E6ED;
+    font-size: 1rem;
+    padding-left: 30px;
+}
+
+/* nav center */
+.nav-center{
+    width: 40%;
+    /* margin: 0 auto; */  /* in alternativa a space-between */
+}
+
+.nav-center ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+}
+.nav-center ul li{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    text-align: center;
+    cursor: pointer;
+}
+.nav-center ul li i{
+    font-size: 25px;
+}
+
+.nav-center ul li p{
+    padding: 5px;
+}
+
+.nav-center ul li.active, .nav-center ul li:hover{
+    color: #0E71EA;
+}
+
+
+/* nav right */
+.nav-right .account{
+    background-color: #53AE98;
+    font-size: 25px;
+    padding: 9px 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+/* MAIN */
+main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    
+}
+
+/* settings */
+.settings{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* content left */
+
+.content-left, .content-right{
+    height: 50%;
+}
+.content-left{
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+}
+
+.content-left .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.content-left .item p{
+    padding: 10px;
+}
+
+.content-left .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #1172EB;
+    font-size: 43px;
+    color: white;
+    border-radius: 20px;
+}
+
+.content-left .btn.orange{
+    background-color: #FCA500;
+}
+
+/* content right */
+
+.content-right{
+    width: 40%;
+}
+
+.content-right .box{
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.content-right .box .top{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-image: url('../img/sfondo.png');
+    background-size: cover;
+}
+
+.content-right .box .bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
